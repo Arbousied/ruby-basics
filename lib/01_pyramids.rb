@@ -41,30 +41,30 @@ def wtf_pyramid
 	print "> "
 	etages = gets.chomp.to_i
 
-if etages %2 != 0
-	puts "Abracadabraaaaaa"
-		u = etages
-		z = 0
-		i = 1
-		f = etages/2
+	if etages %2 != 0
+		puts "Abracadabraaaaaa"
+			u = etages
+			z = 0
+			i = 1
+			f = etages/2
 
-	while z < f
-	puts ((" "*u)+("#"*i))
-		u = u-1                          #un bloc vide " " à chaque étage suppl
-		z = z+1                          #tant que z n'atteint pas i, un étage suppl
-		i = i+2                          #2 blocs "#" à chaque étage suppl
+		while z < f
+		puts ((" "*u)+("#"*i))
+			u = u-1                          #un bloc vide " " à chaque étage suppl
+			z = z+1                          #tant que z n'atteint pas i, un étage suppl
+			i = i+2                          #2 blocs "#" à chaque étage suppl
+		end
+
+		while z/2 < f && i>0                 #i>0 obligatoire sinon message d'erreur
+		puts ((" "*u)+("#"*i))
+			u = u+1                          #on inverse tout
+			z = z-1
+			i = i-2
+		end
+
+	else
+		puts "Un chiffre IMPAIR on a dit !"
 	end
-
-	while z/2 <= f
-	puts ((" "*u)+("#"*i))
-		u = u+1                          #on inverse tout
-		z = z-1
-		i = i-2
-	end
-
-else
-	puts "Un chiffre IMPAIR on a dit !"
-end
 
 end 
 wtf_pyramid
