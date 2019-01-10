@@ -1,3 +1,5 @@
+# Demi-pyramide
+
 def half_pyramid	
 	puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
 
@@ -13,6 +15,8 @@ def half_pyramid
 
 end
 half_pyramid
+
+#Pyramide entière
 
 def full_pyramid
 	puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
@@ -34,6 +38,8 @@ def full_pyramid
 
 end
 full_pyramid
+
+#Double pyramide
 
 def wtf_pyramid
 	puts "Salut, bienvenue dans ma pyramide d'illuminati ! Combien d'étages veux-tu ? (chiffre impair uniquement)"
@@ -57,7 +63,7 @@ def wtf_pyramid
 
 		while z/2 < f && i>0                 #i>0 obligatoire sinon message d'erreur
 		puts ((" "*u)+("#"*i))
-			u = u+1                          #on inverse tout
+			u = u+1                          #on inverse tout par rapport aux lignes 59 60 61
 			z = z-1
 			i = i-2
 		end
