@@ -13,18 +13,14 @@ def login(mdp)
   puts"Confirme ton mot de passe"
   print">"
 
+while gets.chomp != mdp
   puts "C'est pas le bon mot de passe poto."
-  while gets.chomp != mdp
   end
-end
   welcome_screen
-
-
 end
 
 def perform
   mdp = sign_up
   login(mdp)
 end
-
 perform

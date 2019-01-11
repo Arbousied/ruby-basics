@@ -5,7 +5,7 @@ def stairway
   while pos < 10                    #{initiation de la boucle}
     roll = rand(1..6)
     nombre_tours += 1
-    if roll == 1 && pos >  #{des conditions if ou elsif pour chaque face du dé}
+    if roll == 1 && pos > 0 #{des conditions if ou elsif pour chaque face du dé}
       pos = pos - 1
       puts "Tu as fait 1, tu recules à la marche #{pos}"
     elsif roll == 2
