@@ -15,6 +15,8 @@ def login(mdp)
 
   puts "C'est pas le bon mot de passe poto."
   while gets.chomp != mdp
+  end
+end
   welcome_screen
 
 
