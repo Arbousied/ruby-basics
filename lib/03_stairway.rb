@@ -32,7 +32,7 @@ def stairway
 end
 
 
-def average_finish_time(nombre_tours #{méthode qui calcule la moyenne des}
+def average_finish_time(nombre_tours) #{méthode qui calcule la moyenne des}
                        #{lancés de dé pour un nombre x de tours donné en input}
   total_boucles = 0
   nombre_tours.times do total_boucles += stairway
